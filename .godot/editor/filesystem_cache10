@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742909044
+::res://::1742997345
 README.md::TextFile/TextFile::-1::1742857035::0::1::::<><><>0<>0<><>::
 ::res://scens/::1742908965
 fruts.tscn::PackedScene/PackedScene::3802312538469703321::1742857671::0::1::::<><><>0<>0<><>::
-game.tscn::PackedScene::1049661734853516891::1742908965::0::1::::<><><>0<>0<><>::uid://ct5ojkl3d0oaj::::res://sprites/game.jpeg<>uid://b4wwdgeovmwtv::::res://scripts/game.gd<>uid://cqt2qgswhqwpu::::res://scens/player.tscn
+game.tscn::PackedScene/PackedScene::1049661734853516891::1742908965::0::1::::<><><>0<>0<><>::uid://ct5ojkl3d0oaj::::res://sprites/game.jpeg<>uid://b4wwdgeovmwtv::::res://scripts/game.gd<>uid://cqt2qgswhqwpu::::res://scens/player.tscn
 menu.tscn::PackedScene/PackedScene::5914580424399304822::1742857681::0::1::::<><><>0<>0<><>::uid://ctae12muhth57::::res://sprites/menu.jpeg
-player.tscn::PackedScene::5936754318385197722::1742908712::0::1::::<><><>0<>0<><>::uid://csk55xnjmhry8::::res://sprites/player.png
+player.tscn::PackedScene/PackedScene::5936754318385197722::1742908712::0::1::::<><><>0<>0<><>::uid://csk55xnjmhry8::::res://sprites/player.png
 ::res://scripts/::1742857432
 game.gd::GDScript/GDScript::4468654912991907427::1742857432::0::1::::<>Node2D<><>0<>0<><>::
 ::res://sprites/::1742908460
