@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://w45lcjgfc5cc"]
+
+[ext_resource type="Texture2D" uid="uid://ctae12muhth57" path="res://sprites/menu.jpeg" id="1_fhlg3"]
+[ext_resource type="Script" uid="uid://dwvbawxpodrv7" path="res://scripts/Title.gd" id="1_urp0v"]
+[ext_resource type="Texture2D" uid="uid://bgwr62tces060" path="res://sprites/CTL_Collectors_no_bg_small.png" id="2_gtuqw"]
+[ext_resource type="Theme" uid="uid://dgo24lfwdkafo" path="res://themes/title_screen.tres" id="3_vgkvh"]
+[ext_resource type="Theme" uid="uid://dihwgyfxyun0e" path="res://themes/title_quit.tres" id="4_hsc7e"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_urp0v")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_fhlg3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Logo" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_gtuqw")
+
+[node name="Start_btn" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_vgkvh")
+text = "Start"
+
+[node name="Quit_bnt" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("4_hsc7e")
+text = "Quit "
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Start_btn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Quit_bnt" to="." method="_on_quit_bnt_pressed"]

@@ -1,1 +1,10 @@
+res://scens/title_screen.tscn
+res://scens/game.tscn
 res://scens/menu.tscn
+res://fonts/title_screen.tres
+res://fonts/title_quit.tres
+res://themes/title_screen.tres
+res://themes/title_quit.tres
+res://scens/Title.gd
+res://scens/fruts.tscn
+res://scens/player.tscn
