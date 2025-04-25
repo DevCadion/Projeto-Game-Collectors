@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://devxbt82ynshl"
-path="res://.godot/imported/pear.png-ae2ca3d7f26041d7556e83e93c053c2b.ctex"
+uid="uid://sbluft5ogron"
+path="res://.godot/imported/pineapple.png-6284f0740c6a73c709850249ada6d15a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/pear.png"
-dest_files=["res://.godot/imported/pear.png-ae2ca3d7f26041d7556e83e93c053c2b.ctex"]
+source_file="res://sprites/frutas/pineapple.png"
+dest_files=["res://.godot/imported/pineapple.png-6284f0740c6a73c709850249ada6d15a.ctex"]
 
 [params]
 

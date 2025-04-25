@@ -1,11 +1,13 @@
+Sprite2D
+CollisionShape2D
+Node2D
+Area2D
+Marker2D
 Button
 TextureRect
 TextEdit
 VBoxContainer
 HBoxContainer
 MarginContainer
-CollisionShape2D
-Area2D
-Sprite2D
 CharacterBody2D
 StaticBody2D
