@@ -18,6 +18,8 @@ texture = ExtResource("1_7lg5d")
 centered = false
 
 [node name="skay" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="skay"]
 position = Vector2(672.25, -22)
@@ -25,6 +27,8 @@ shape = SubResource("RectangleShape2D_ulfje")
 debug_color = Color(0.158364, 0.517952, 1, 0.42)
 
 [node name="full" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="full"]
 position = Vector2(671.875, 726)
@@ -32,12 +36,14 @@ shape = SubResource("RectangleShape2D_ulfje")
 debug_color = Color(0.977425, 0, 0.404218, 0.42)
 
 [node name="WallRith" type="StaticBody2D" parent="."]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallRith"]
 position = Vector2(-19, 351.812)
 shape = SubResource("RectangleShape2D_xahwf")
 
 [node name="WallLaft" type="StaticBody2D" parent="."]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallLaft"]
 position = Vector2(1363.25, 352.094)
@@ -45,3 +51,36 @@ shape = SubResource("RectangleShape2D_xahwf")
 
 [node name="Player" parent="." instance=ExtResource("3_xahwf")]
 position = Vector2(672, 600)
+collision_mask = 6
+
+[node name="Positions" type="Marker2D" parent="."]
+
+[node name="Pos-1" type="Marker2D" parent="Positions"]
+position = Vector2(769, -227)
+
+[node name="Pos-2" type="Marker2D" parent="Positions"]
+position = Vector2(347, -173)
+
+[node name="Pos-3" type="Marker2D" parent="Positions"]
+position = Vector2(608, -143)
+
+[node name="Pos-4" type="Marker2D" parent="Positions"]
+position = Vector2(131, -143)
+
+[node name="Pos-5" type="Marker2D" parent="Positions"]
+position = Vector2(448, -227)
+
+[node name="Pos-6" type="Marker2D" parent="Positions"]
+position = Vector2(983, -173)
+
+[node name="Pos-7" type="Marker2D" parent="Positions"]
+position = Vector2(1125, -83)
+
+[node name="Pos-8" type="Marker2D" parent="Positions"]
+position = Vector2(1266, -22)
+
+[node name="Pos-9" type="Marker2D" parent="Positions"]
+position = Vector2(852, -83)
+
+[node name="Pos-10" type="Marker2D" parent="Positions"]
+position = Vector2(244, -227)
