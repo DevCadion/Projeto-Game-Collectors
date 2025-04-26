@@ -53,7 +53,7 @@ shape = SubResource("RectangleShape2D_xahwf")
 position = Vector2(672, 600)
 collision_mask = 6
 
-[node name="Positions" type="Marker2D" parent="."]
+[node name="Positions" type="Node2D" parent="."]
 
 [node name="Pos-1" type="Marker2D" parent="Positions"]
 position = Vector2(769, -227)
@@ -84,3 +84,9 @@ position = Vector2(852, -83)
 
 [node name="Pos-10" type="Marker2D" parent="Positions"]
 position = Vector2(244, -227)
+
+[node name="TimerSpaw" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="TimerSpaw" to="." method="_on_timer_spaw_timeout"]
