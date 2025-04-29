@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://o7p1mm6x1n1t"]
+[gd_scene load_steps=7 format=3 uid="uid://o7p1mm6x1n1t"]
 
 [ext_resource type="Texture2D" uid="uid://ct5ojkl3d0oaj" path="res://sprites/game.jpeg" id="1_7lg5d"]
 [ext_resource type="Script" uid="uid://b4wwdgeovmwtv" path="res://scripts/game.gd" id="1_ulfje"]
 [ext_resource type="PackedScene" uid="uid://cqt2qgswhqwpu" path="res://scens/player.tscn" id="3_xahwf"]
+[ext_resource type="PackedScene" uid="uid://dc0y3ndnxxu3y" path="res://scens/fruts.tscn" id="4_3an71"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ulfje"]
 size = Vector2(1419.75, 144)
@@ -88,5 +89,8 @@ position = Vector2(244, -227)
 [node name="TimerSpaw" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="Fruts" parent="." instance=ExtResource("4_3an71")]
+position = Vector2(672, 91)
 
 [connection signal="timeout" from="TimerSpaw" to="." method="_on_timer_spaw_timeout"]
