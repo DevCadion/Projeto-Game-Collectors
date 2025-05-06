@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3d17emqqneyy"]
+
+[ext_resource type="Script" uid="uid://dynglxlptt6i4" path="res://scripts/orange.gd" id="1_5thdb"]
+[ext_resource type="Texture2D" uid="uid://dd2vmluhtqk8k" path="res://sprites/frutas/orange.png" id="2_5thdb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0u1sk"]
+radius = 27.0
+height = 84.0
+
+[node name="orange" type="Area2D" groups=["frutas"]]
+collision_layer = 2
+collision_mask = 17
+script = ExtResource("1_5thdb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_5thdb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0u1sk")
+debug_color = Color(0.65309, 0.512769, 0.213187, 0.42)
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[node name="TimerDelete" type="Timer" parent="."]
+wait_time = 100.0
+
+[connection signal="area_entered" from="." to="." method="_on_orange_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
+[connection signal="timeout" from="TimerDelete" to="." method="_on_timer_delete_timeout"]

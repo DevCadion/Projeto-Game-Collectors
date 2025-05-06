@@ -1,2 +1,10 @@
 res://scens/game.tscn
-res://scens/fruts.tscn
+res://scens/title_screen.tscn
+res://themes/title_screen.tres
+res://themes/title_quit.tres
+res://scens/grape.tscn
+res://scens/morango.tscn
+res://scens/orange.tscn
+res://scens/pineapple.tscn
+res://scens/player.tscn
+res://scens/pear.tscn

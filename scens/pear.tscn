@@ -1,20 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://dc0y3ndnxxu3y"]
+[gd_scene load_steps=4 format=3 uid="uid://bdi7y6o3pj3f2"]
 
-[ext_resource type="Script" uid="uid://iplikf6gyx4g" path="res://scripts/fruts.gd" id="1_0u1sk"]
-[ext_resource type="Texture2D" uid="uid://dilamt2sfppog" path="res://sprites/frutas/strawberry.png" id="1_cbxxw"]
+[ext_resource type="Script" uid="uid://but4hkkhvmel3" path="res://scripts/pear.gd" id="1_id5o0"]
+[ext_resource type="Texture2D" uid="uid://devxbt82ynshl" path="res://sprites/frutas/pear.png" id="2_id5o0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0u1sk"]
 radius = 27.0
 height = 84.0
 
-[node name="Fruts" type="Area2D"]
+[node name="Pear" type="Area2D" groups=["frutas"]]
 collision_layer = 2
 collision_mask = 17
-script = ExtResource("1_0u1sk")
+script = ExtResource("1_id5o0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("1_cbxxw")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_id5o0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_0u1sk")
@@ -25,5 +25,6 @@ debug_color = Color(0.65309, 0.512769, 0.213187, 0.42)
 [node name="TimerDelete" type="Timer" parent="."]
 wait_time = 100.0
 
+[connection signal="area_entered" from="." to="." method="_on_pear_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
 [connection signal="timeout" from="TimerDelete" to="." method="_on_timer_delete_timeout"]
