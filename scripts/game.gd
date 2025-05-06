@@ -1,33 +1,66 @@
 extends Node2D
 
-var fruit_scene = preload("res://scens/fruts.tscn")
-@onready var positions = $Positions
-var last_position
+var pl_speed = 400
 
-var game_started = false # Nova variável para saber se o jogo começou
+var score = 0
 
-func _ready() -> void:
-	game_started = true # Marca que o jogo já começou (você pode controlar isso melhor depois se quiser)
-	spawn_fruit() # Spawn inicial
 
-func _on_timer_spaw_timeout() -> void:
-	spawn_fruit()
+@onready var morango = preload("res://scens/morango.tscn")
+@onready var grape = preload("res://scens/grape.tscn")
+@onready var orange = preload("res://scens/orange.tscn")
+@onready var pear = preload("res://scens/pear.tscn")
+@onready var pineapple = preload("res://scens/pineapple.tscn")
 
-func spawn_fruit():
-	if not game_started:
-		return # Se o jogo não começou, não faz nada
+@onready var fruits = [morango, grape, orange, pear, pineapple];
 
-	var positions_list = positions.get_children()
-	if positions_list.is_empty():
-		print("Nenhuma posição disponível para spawnar frutas.")
-		return
+var min_speed = 100
+var max_speed = 250
 
-	var spawn_position = positions_list.pick_random()
+var fruits_inst 
 
-	if spawn_position != last_position:
-		var fruit_instance = fruit_scene.instantiate()
-		fruit_instance.global_position = spawn_position.global_position
-		add_child(fruit_instance)
-		last_position = spawn_position
-	else:
-		spawn_fruit() # Só tenta spawnar de novo se caiu na mesma posição
+var timer = 0
+var more_fruits = 50
+var timer_vel = 0
+
+
+func _ready():
+	randomize()
+	pass
+	
+func _physics_process(delta):
+	move_player(delta) 
+	
+	timer += delta
+	if timer >= randi() %more_fruits:
+		fruits_spawn()
+		timer = 0
+	level_inc(delta)
+	
+	$score.text = str(score)
+
+	
+	
+func move_player(delta):
+	var direction = Input.get_action_strength("right") - Input.get_action_strength("left")
+	if direction != 0:
+		$player.position.x += direction * pl_speed * delta
+	$player.position.x = clamp($player.position.x, 50, 1290)
+	
+	
+func fruits_spawn():
+	var fruits_rnd = fruits[randi() %5]
+	fruits_inst = fruits_rnd.instantiate()
+	fruits_inst.position = Vector2(randf_range(30, 1100),-10)
+	fruits_inst.speed = randi_range(min_speed, max_speed)
+	add_child(fruits_inst, true)
+	pass
+	
+func level_inc(delta):
+	timer_vel += delta
+	if timer_vel >= 10:
+		min_speed += 30
+		max_speed += 10
+		more_fruits -= 5
+		if more_fruits <= 2:
+			more_fruits = 2
+		timer_vel = 0
