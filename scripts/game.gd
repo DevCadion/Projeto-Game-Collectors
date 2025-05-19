@@ -44,13 +44,13 @@ func move_player(delta):
 	var direction = Input.get_action_strength("right") - Input.get_action_strength("left")
 	if direction != 0:
 		$player.position.x += direction * pl_speed * delta
-	$player.position.x = clamp($player.position.x, 50, 1290)
+	$player.position.x = clamp($player.position.x, 55, 1180)
 	
 	
 func fruits_spawn():
 	var fruits_rnd = fruits[randi() %5]
 	fruits_inst = fruits_rnd.instantiate()
-	fruits_inst.position = Vector2(randf_range(30, 1100),-10)
+	fruits_inst.position = Vector2(randf_range(40, 1100), -10)
 	fruits_inst.speed = randi_range(min_speed, max_speed)
 	add_child(fruits_inst, true)
 	pass

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://csk55xnjmhry8" path="res://sprites/player.png" id="1_4flbx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
-size = Vector2(49, 30)
+size = Vector2(51, 30)
 
 [node name="player" type="Area2D"]
 scale = Vector2(2, 2)

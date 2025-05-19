@@ -10,6 +10,7 @@
 script = ExtResource("1_ulfje")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1, 0.938802)
 texture = ExtResource("1_7lg5d")
 centered = false
 
@@ -25,7 +26,7 @@ position = Vector2(372, -83)
 position = Vector2(608, -143)
 
 [node name="Pos-4" type="Marker2D" parent="Positions"]
-position = Vector2(165, -22)
+position = Vector2(160, -22)
 
 [node name="Pos-5" type="Marker2D" parent="Positions"]
 position = Vector2(448, -227)
@@ -46,7 +47,7 @@ position = Vector2(852, -83)
 position = Vector2(257, -173)
 
 [node name="player" parent="." instance=ExtResource("3_xahwf")]
-position = Vector2(672, 595)
+position = Vector2(671, 547)
 
 [node name="score" type="RichTextLabel" parent="."]
 offset_left = 1125.0
@@ -58,7 +59,7 @@ text = "0"
 tab_size = 8
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_top = 722.0
+offset_top = 668.0
 offset_right = 1344.0
-offset_bottom = 762.0
+offset_bottom = 721.0
 color = Color(0, 0, 0, 1)

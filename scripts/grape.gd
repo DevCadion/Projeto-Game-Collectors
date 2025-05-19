@@ -5,7 +5,7 @@ extends Area2D
 func _physics_process(delta):
 	self.position.y += speed * delta
 
-	if self.position.y >= 768:
+	if self.position.y >= 662:
 		queue_free()
 
 

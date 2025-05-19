@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Collectors"
-run/main_scene="uid://w45lcjgfc5cc"
+run/main_scene="uid://dmwtjcjr21abp"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [display]
