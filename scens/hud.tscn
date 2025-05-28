@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=3 uid="uid://r7q0pflu60ni"]
+
+[ext_resource type="Texture2D" uid="uid://bx2nrig4otjjw" path="res://sprites/Vidas/vida.png" id="1_37p78"]
+[ext_resource type="Script" path="res://scens/hud.gd" id="1_lv5au"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64ctp"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 0, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sq4i"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 50, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_640wx"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 100, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2258"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 150, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xsix"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 200, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rftc2"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 250, 300, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61f8s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64ctp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sq4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_640wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2258")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xsix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rftc2")
+}],
+"loop": true,
+"name": &"Animation_vida",
+"speed": 5.0
+}]
+
+[node name="HUD" type="Node2D"]
+script = ExtResource("1_lv5au")
+
+[node name="Vida" type="AnimatedSprite2D" parent="."]
+position = Vector2(82, 0)
+sprite_frames = SubResource("SpriteFrames_61f8s")
+animation = &"Animation_vida"
