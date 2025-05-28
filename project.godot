@@ -14,6 +14,10 @@ config/name="Collectors"
 run/main_scene="uid://dmwtjcjr21abp"
 config/features=PackedStringArray("4.4", "Mobile")
 
+[autoload]
+
+Transcion="*res://scens/transcion.tscn"
+
 [display]
 
 window/size/viewport_width=1344

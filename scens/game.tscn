@@ -1,10 +1,61 @@
-[gd_scene load_steps=5 format=3 uid="uid://o7p1mm6x1n1t"]
+[gd_scene load_steps=13 format=3 uid="uid://o7p1mm6x1n1t"]
 
 [ext_resource type="Texture2D" uid="uid://ct5ojkl3d0oaj" path="res://sprites/game.jpeg" id="1_7lg5d"]
 [ext_resource type="Script" uid="uid://b4wwdgeovmwtv" path="res://scripts/game.gd" id="1_ulfje"]
 [ext_resource type="PackedScene" uid="uid://devy2qvwgl5wa" path="res://scens/player.tscn" id="3_xahwf"]
+[ext_resource type="Texture2D" uid="uid://bx2nrig4otjjw" path="res://sprites/Vidas/vida.png" id="4_3an71"]
 
 [sub_resource type="Theme" id="Theme_xahwf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3an71"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 0, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfjwf"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 50, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpwcj"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 100, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i34al"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 150, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drqnf"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 200, 300, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sdli"]
+atlas = ExtResource("4_3an71")
+region = Rect2(0, 250, 300, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nufnj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3an71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfjwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpwcj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i34al")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drqnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sdli")
+}],
+"loop": true,
+"name": &"vida",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ulfje")
@@ -63,3 +114,10 @@ offset_top = 668.0
 offset_right = 1344.0
 offset_bottom = 721.0
 color = Color(0, 0, 0, 1)
+
+[node name="VidaBar" type="AnimatedSprite2D" parent="."]
+position = Vector2(214.5, 117)
+scale = Vector2(1.05, 1.28)
+sprite_frames = SubResource("SpriteFrames_nufnj")
+animation = &"vida"
+speed_scale = 0.0
