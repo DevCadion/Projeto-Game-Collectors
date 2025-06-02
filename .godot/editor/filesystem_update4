@@ -1,2 +1,8 @@
 res://scens/game.tscn
+res://scripts/morango.gd
+res://scens/morango.tscn
+res://scens/orange.tscn
+res://scripts/transision.gd
+res://transision.tscn
 res://scripts/game.gd
+res://scripts/Title.gd

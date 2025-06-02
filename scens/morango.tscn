@@ -25,5 +25,6 @@ debug_color = Color(0.65309, 0.512769, 0.213187, 0.42)
 [node name="TimerDelete" type="Timer" parent="."]
 wait_time = 100.0
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
 [connection signal="timeout" from="TimerDelete" to="." method="_on_timer_delete_timeout"]

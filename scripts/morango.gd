@@ -9,7 +9,8 @@ func _physics_process(delta):
 	if self.position.y >= 662:
 		queue_free()
 
-func _on_morango_area_entered(area: Area2D) -> void:
+
+func _on_area_entered(area: Area2D) -> void:
 	if area.name == "player":
 		get_parent().score +=1
 		queue_free()

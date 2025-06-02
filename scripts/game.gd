@@ -67,7 +67,9 @@ func set_vida(nova_vida: int):
 	vida_atual = clamp(nova_vida, 0, vida_max)
 	atualizar_barra_vida()
 	if vida_atual <= 0:
-		game_over()
+		Transision.fade_to_scene("res://scens/title_screen.tscn")
+		
+		
 
 
 func atualizar_barra_vida():

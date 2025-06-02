@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.4", "Mobile")
 
 [autoload]
 
-Transcion="*res://scens/transcion.tscn"
+Transision="*res://transision.tscn"
 
 [display]
 
