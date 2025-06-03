@@ -1,1 +1,8 @@
-res://transision.tscn
+res://scens/game.tscn
+res://scens/grape.tscn
+res://scripts/game.gd
+res://scens/bomba.tscn
+res://scens/grape.gd
+res://scripts/morango.gd
+res://scens/morango.tscn
+res://scripts/grape.gd

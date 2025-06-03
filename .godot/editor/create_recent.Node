@@ -1,3 +1,4 @@
+Area2D
 Label
 AnimationPlayer
 ColorRect
@@ -9,6 +10,5 @@ RichTextLabel
 Camera2D
 CollisionShape2D
 Sprite2D
-Area2D
 Timer
 VisibleOnScreenEnabler2D

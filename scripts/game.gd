@@ -4,11 +4,13 @@ var pl_speed = 400
 var score = 0
 
 @onready var morango = preload("res://scens/morango.tscn")
-@onready var grape = preload("res://scens/grape.tscn")
+@onready var bomba = preload("res://scens/bomba.tscn")
 @onready var orange = preload("res://scens/orange.tscn")
 @onready var pear = preload("res://scens/pear.tscn")
 @onready var pineapple = preload("res://scens/pineapple.tscn")
-@onready var fruits = [morango, grape, orange, pear, pineapple]
+
+@onready var fruits = [morango, bomba, orange, pear, pineapple]
+
 
 var min_speed = 100
 var max_speed = 250
