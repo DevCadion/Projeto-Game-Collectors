@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beev8wwkxs2lu"
+path="res://.godot/imported/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3-a3b08eb9ff48eb6688d922f80a290362.mp3str"
+
+[deps]
+
+source_file="res://sons/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3"
+dest_files=["res://.godot/imported/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3-a3b08eb9ff48eb6688d922f80a290362.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://otixm5ggjuf2"]
+[gd_scene load_steps=5 format=3 uid="uid://otixm5ggjuf2"]
 
 [ext_resource type="Script" uid="uid://dx03b4yvboj3" path="res://scripts/bomba.gd" id="1_skgeq"]
 [ext_resource type="Texture2D" uid="uid://bpk5fydkwe6vx" path="res://sprites/frutas/pixil-frame-0 (9).png" id="2_gu521"]
+[ext_resource type="AudioStream" uid="uid://bl2rnkoyyykyk" path="res://sons/sonbomb.mp3" id="3_gu521"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0u1sk"]
 radius = 28.0
 height = 66.0
 
-[node name="grape" type="Area2D" groups=["frutas"]]
+[node name="bomb" type="Area2D" groups=["frutas"]]
 collision_layer = 2
 collision_mask = 17
 script = ExtResource("1_skgeq")
@@ -28,6 +29,10 @@ scale = Vector2(1.85, 1.8)
 
 [node name="TimerDelete" type="Timer" parent="."]
 wait_time = 100.0
+
+[node name="efeitosonoro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gu521")
+volume_db = 24.0
 
 [connection signal="area_entered" from="." to="." method="_on_grape_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

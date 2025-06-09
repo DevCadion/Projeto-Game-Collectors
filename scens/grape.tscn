@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://efyrbd2t4fhb"]
+[gd_scene load_steps=6 format=3 uid="uid://efyrbd2t4fhb"]
 
 [ext_resource type="Script" uid="uid://dvrivldv2g53n" path="res://scripts/morango.gd" id="1_8iu72"]
 [ext_resource type="Texture2D" uid="uid://delfb514kal2g" path="res://sprites/frutas/grape.png" id="2_8iu72"]
+[ext_resource type="AudioStream" uid="uid://b6g7cl780vhxt" path="res://sons/sonfruta.mp3" id="3_afhb2"]
 
 [sub_resource type="GDScript" id="GDScript_8iu72"]
 script/source = "extends Sprite2D
@@ -47,6 +48,9 @@ scale = Vector2(2.1, 2.25)
 
 [node name="TimerDelete" type="Timer" parent="."]
 wait_time = 100.0
+
+[node name="efeitosonoro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_afhb2")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

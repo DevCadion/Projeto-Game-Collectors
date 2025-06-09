@@ -9,6 +9,8 @@ var score = 0
 @onready var pear = preload("res://scens/pear.tscn")
 @onready var pineapple = preload("res://scens/pineapple.tscn")
 
+
+
 @onready var fruits = [morango, bomba, orange, pear, pineapple]
 
 

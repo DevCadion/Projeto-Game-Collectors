@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3d17emqqneyy"]
+[gd_scene load_steps=5 format=3 uid="uid://c3d17emqqneyy"]
 
 [ext_resource type="Script" uid="uid://dynglxlptt6i4" path="res://scripts/orange.gd" id="1_5thdb"]
 [ext_resource type="Texture2D" uid="uid://dd2vmluhtqk8k" path="res://sprites/frutas/orange.png" id="2_5thdb"]
+[ext_resource type="AudioStream" uid="uid://b6g7cl780vhxt" path="res://sons/sonfruta.mp3" id="3_e4bwa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0u1sk"]
 radius = 27.0
@@ -24,6 +25,9 @@ debug_color = Color(0.65309, 0.512769, 0.213187, 0.42)
 
 [node name="TimerDelete" type="Timer" parent="."]
 wait_time = 100.0
+
+[node name="efeitosonoro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_e4bwa")
 
 [connection signal="area_entered" from="." to="." method="_on_orange_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Area2D
 Label
 AnimationPlayer
@@ -11,4 +12,3 @@ Camera2D
 CollisionShape2D
 Sprite2D
 Timer
-VisibleOnScreenEnabler2D
