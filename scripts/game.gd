@@ -43,7 +43,10 @@ func _physics_process(delta):
 	$score.text = str(score)
 
 func move_player(delta):
-	var direction = Input.get_action_strength("right") - Input.get_action_strength("left")
+	var right_strength = Input.get_action_strength("right") + Input.get_action_strength("setadireita")
+	var left_strength = Input.get_action_strength("left") + Input.get_action_strength("setaesquerda")
+	var direction = right_strength - left_strength
+	
 	if direction != 0:
 		$player.position.x += direction * pl_speed * delta
 	$player.position.x = clamp($player.position.x, 55, 1180)

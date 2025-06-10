@@ -1,35 +1,34 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749502515
+::res://::1749562971
 README.md::TextFile/TextFile::-1::1749497012::0::1::::<><><>0<>0<><>::
 transision.tscn::PackedScene/PackedScene::5857702064018785055::1749497012::0::1::::<><><>0<>0<><>::uid://bam04bjtuat02::::res://scripts/transision.gd
 ::res://fonts/::1749497012
 PixeloidSans-Bold.ttf::FontFile/FontFile::3874581966338742638::1749497012::1749497012::1::::<><><>0<>0<>90536ebdbae11e8d79f3301de7c85462<>res://.godot/imported/PixeloidSans-Bold.ttf-824ab30c69d89d64ae839a78c5a5afb7.fontdata::
 PixeloidSans.ttf::FontFile/FontFile::2497988351057491317::1749497012::1749497012::1::::<><><>0<>0<>d4b24c5a18bd8a7ce8b073e9de23bbf0<>res://.godot/imported/PixeloidSans.ttf-bbae195dd1102ad5443a4cdf1f15f723.fontdata::
-::res://scens/::1749504923
-bomba.tscn::PackedScene::1022394474366875261::1749504923::0::1::::<><><>0<>0<><>::uid://dx03b4yvboj3::::res://scripts/bomba.gd<>uid://bpk5fydkwe6vx::::res://sprites/frutas/pixil-frame-0 (9).png<>uid://bh32u1yq5o7wo::::res://sons/Some Hand grab Sound effect.mp3
-game.tscn::PackedScene::1049661734853516891::1749504922::0::1::::<><><>0<>0<><>::uid://ct5ojkl3d0oaj::::res://sprites/game.jpeg<>uid://b4wwdgeovmwtv::::res://scripts/game.gd<>uid://devy2qvwgl5wa::::res://scens/player.tscn<>uid://bx2nrig4otjjw::::res://sprites/Vidas/vida.png<>uid://bvg42fsbvfptu::::res://fonts/PixeloidSans-Bold.ttf<>uid://beev8wwkxs2lu::::res://sons/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3
-grape.tscn::PackedScene::292564888056262843::1749504922::0::1::::<><><>0<>0<><>::uid://dvrivldv2g53n::::res://scripts/morango.gd<>uid://delfb514kal2g::::res://sprites/frutas/grape.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
+::res://scens/::1749505696
+bomba.tscn::PackedScene::1022394474366875261::1749505696::0::1::::<><><>0<>0<><>::uid://dx03b4yvboj3::::res://scripts/bomba.gd<>uid://bpk5fydkwe6vx::::res://sprites/frutas/pixil-frame-0 (9).png<>uid://bl2rnkoyyykyk::::res://sons/sonbomb.mp3
+game.tscn::PackedScene::1049661734853516891::1749505695::0::1::::<><><>0<>0<><>::uid://ct5ojkl3d0oaj::::res://sprites/game.jpeg<>uid://b4wwdgeovmwtv::::res://scripts/game.gd<>uid://devy2qvwgl5wa::::res://scens/player.tscn<>uid://bx2nrig4otjjw::::res://sprites/Vidas/vida.png<>uid://bvg42fsbvfptu::::res://fonts/PixeloidSans-Bold.ttf<>uid://beev8wwkxs2lu::::res://sons/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3
+grape.tscn::PackedScene::292564888056262843::1749505695::0::1::::<><><>0<>0<><>::uid://dvrivldv2g53n::::res://scripts/morango.gd<>uid://delfb514kal2g::::res://sprites/frutas/grape.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
 hud.tscn::PackedScene/PackedScene::1260287342810387582::1749497012::0::1::::<><><>0<>0<><>::uid://bx2nrig4otjjw::::res://sprites/Vidas/vida.png<>res://scens/hud.gd
-morango.tscn::PackedScene::7352757080322884008::1749504922::0::1::::<><><>0<>0<><>::uid://dvrivldv2g53n::::res://scripts/morango.gd<>uid://dilamt2sfppog::::res://sprites/frutas/strawberry.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
-orange.tscn::PackedScene::6745958139110091072::1749504922::0::1::::<><><>0<>0<><>::uid://dynglxlptt6i4::::res://scripts/orange.gd<>uid://dd2vmluhtqk8k::::res://sprites/frutas/orange.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
-pear.tscn::PackedScene::2615489690605660269::1749504922::0::1::::<><><>0<>0<><>::uid://but4hkkhvmel3::::res://scripts/pear.gd<>uid://devxbt82ynshl::::res://sprites/frutas/pear.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
-pineapple.tscn::PackedScene::7736228718038358821::1749504922::0::1::::<><><>0<>0<><>::uid://bgrpswrl4veid::::res://scripts/pineapple.gd<>uid://dd2vmluhtqk8k::::res://sprites/frutas/orange.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
+morango.tscn::PackedScene::7352757080322884008::1749505695::0::1::::<><><>0<>0<><>::uid://dvrivldv2g53n::::res://scripts/morango.gd<>uid://dilamt2sfppog::::res://sprites/frutas/strawberry.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
+orange.tscn::PackedScene::6745958139110091072::1749505695::0::1::::<><><>0<>0<><>::uid://dynglxlptt6i4::::res://scripts/orange.gd<>uid://dd2vmluhtqk8k::::res://sprites/frutas/orange.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
+pear.tscn::PackedScene::2615489690605660269::1749505695::0::1::::<><><>0<>0<><>::uid://but4hkkhvmel3::::res://scripts/pear.gd<>uid://devxbt82ynshl::::res://sprites/frutas/pear.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
+pineapple.tscn::PackedScene::7736228718038358821::1749505695::0::1::::<><><>0<>0<><>::uid://bgrpswrl4veid::::res://scripts/pineapple.gd<>uid://dd2vmluhtqk8k::::res://sprites/frutas/orange.png<>uid://b6g7cl780vhxt::::res://sons/sonfruta.mp3
 player.tscn::PackedScene/PackedScene::7484875656551075484::1749497012::0::1::::<><><>0<>0<><>::uid://csk55xnjmhry8::::res://sprites/player.png
 title_screen.tscn::PackedScene/PackedScene::8048114300092158993::1749497012::0::1::::<><><>0<>0<><>::uid://ctae12muhth57::::res://sprites/menu.jpeg<>uid://dwvbawxpodrv7::::res://scripts/Title.gd<>uid://bgwr62tces060::::res://sprites/CTL_Collectors_no_bg_small.png<>uid://dgo24lfwdkafo::::res://themes/title_screen.tres<>uid://dihwgyfxyun0e::::res://themes/title_quit.tres
-::res://scripts/::1749504531
-bomba.gd::GDScript::259615244747217950::1749504531::0::1::::<>Area2D<><>0<>0<><>::
+::res://scripts/::1749505695
+bomba.gd::GDScript::259615244747217950::1749505106::0::1::::<>Area2D<><>0<>0<><>::
 game.gd::GDScript::4468654912991907427::1749504209::0::1::::<>Node2D<><>0<>0<><>::
 morango.gd::GDScript::8668846010292895229::1749504531::0::1::::<>Area2D<><>0<>0<><>::
 orange.gd::GDScript::8871016380622016657::1749504508::0::1::::<>Area2D<><>0<>0<><>::
 pear.gd::GDScript::3831194568156579506::1749504512::0::1::::<>Area2D<><>0<>0<><>::
 pineapple.gd::GDScript::2843592248836848571::1749504221::0::1::::<>Area2D<><>0<>0<><>::
-Title.gd::GDScript/GDScript::8746830452688620486::1749497012::0::1::::<>Control<><>0<>0<><>::
+Title.gd::GDScript::8746830452688620486::1749505695::0::1::::<>Control<><>0<>0<><>::
 transision.gd::GDScript/GDScript::2412762996900834457::1749497012::0::1::::<>CanvasLayer<><>0<>0<><>::
-::res://sons/::1749505014
-It Takes Two to Tango Vanoss Gaming Background Music HD.mp3::AudioStreamMP3::2676768747293656374::1749502478::1749502515::1::::<><><>0<>0<>c7c0d13371b42feb33420ecf4debdb00<>res://.godot/imported/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3-a3b08eb9ff48eb6688d922f80a290362.mp3str::
-Some Hand grab Sound effect.mp3::AudioStreamMP3::2937221644405848522::1749502995::1749502995::1::::<><><>0<>0<>44d93f9c12a3b4b848f7169a121c24c5<>res://.godot/imported/Some Hand grab Sound effect.mp3-5c485a0c811640b9d469033bc8a7bd88.mp3str::
-sonbomb.mp3::AudioStreamMP3::3215292115253105954::1749505014::1749505014::1::::<><><>0<>0<>b1f3833deb13f753c8e65771397f3619<>res://.godot/imported/sonbomb.mp3-c2efd72438f446f48f90a59c207daf00.mp3str::
-sonfruta.mp3::AudioStreamMP3::4576608247077004821::1749504850::1749504850::1::::<><><>0<>0<>4c68e92089c216992153065c4b5a7bb0<>res://.godot/imported/sonfruta.mp3-5ec4a956c2db3d5afaff11559b053112.mp3str::
+::res://sons/::1749505022
+It Takes Two to Tango Vanoss Gaming Background Music HD.mp3::AudioStreamMP3/AudioStreamMP3::2676768747293656374::1749502478::1749502515::1::::<><><>0<>0<>c7c0d13371b42feb33420ecf4debdb00<>res://.godot/imported/It Takes Two to Tango Vanoss Gaming Background Music HD.mp3-a3b08eb9ff48eb6688d922f80a290362.mp3str::
+sonbomb.mp3::AudioStreamMP3/AudioStreamMP3::3215292115253105954::1749505014::1749505014::1::::<><><>0<>0<>b1f3833deb13f753c8e65771397f3619<>res://.godot/imported/sonbomb.mp3-c2efd72438f446f48f90a59c207daf00.mp3str::
+sonfruta.mp3::AudioStreamMP3/AudioStreamMP3::4576608247077004821::1749504850::1749504850::1::::<><><>0<>0<>4c68e92089c216992153065c4b5a7bb0<>res://.godot/imported/sonfruta.mp3-5ec4a956c2db3d5afaff11559b053112.mp3str::
 ::res://sprites/::1749497012
 barradevida.png::CompressedTexture2D/CompressedTexture2D::4091700045875910526::1749497012::1749497012::1::::<><><>0<>0<>028c85a5b903d314ba54ae6b59c2e6b3<>res://.godot/imported/barradevida.png-396bc4e795e39a4155f1dba02c0a356d.ctex::
 CTL_Collectors_no_bg_small.png::CompressedTexture2D/CompressedTexture2D::2854059052177383531::1749497012::1749497012::1::::<><><>0<>0<>2cd9fa4bdbb00579013ac46088b5834a<>res://.godot/imported/CTL_Collectors_no_bg_small.png-e12c397f53586168b30b0859c9965ea1.ctex::

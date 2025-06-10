@@ -1,13 +1,9 @@
 res://scens/game.tscn
+res://scripts/game.gd
 res://scens/morango.tscn
-res://scripts/bomba.gd
 res://scens/grape.tscn
 res://scens/orange.tscn
 res://scens/pear.tscn
 res://scens/pineapple.tscn
 res://scens/bomba.tscn
-res://scripts/game.gd
-res://scripts/morango.gd
-res://scripts/orange.gd
-res://scripts/pear.gd
-res://scripts/pineapple.gd
+res://scens/player.tscn
